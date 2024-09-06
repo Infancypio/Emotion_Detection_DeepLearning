@@ -1,0 +1,35 @@
+digraph TestEnvironment {
+	Internet
+	Firewall
+	WebServer [label="Web Server (Apache/Nginx)"]
+	BackendServer [label="Backend Server"]
+	DatabaseServer [label="Database Server"]
+	MobileDevices [label="Mobile Devices
+(iOS, Android)"]
+	WearableDevices [label="Wearable Devices"]
+	NetworkInfrastructure [label="Network Infrastructure
+(High-speed connection)"]
+	TestingTools [label="Testing Tools
+(Selenium, JUnit, etc.)"]
+	MonitoringTools [label="Monitoring and Analytics Tools"]
+	DeploymentTools [label="Deployment and CI/CD Tools"]
+	BackupRecovery [label="Backup and Recovery Mechanisms"]
+	DocumentationTools [label="Documentation Tools
+(Wiki, Documentation)"]
+	VersionControl [label="Version Control System
+(Git)"]
+	UserSupport [label="User Support and Feedback Tools"]
+	Internet -> Firewall
+	Firewall -> WebServer
+	WebServer -> BackendServer
+	BackendServer -> DatabaseServer
+	MobileDevices -> WearableDevices
+	WearableDevices -> NetworkInfrastructure
+	NetworkInfrastructure -> TestingTools
+	TestingTools -> MonitoringTools
+	MonitoringTools -> DeploymentTools
+	DeploymentTools -> BackupRecovery
+	BackupRecovery -> DocumentationTools
+	DocumentationTools -> VersionControl
+	VersionControl -> UserSupport
+}
